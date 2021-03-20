@@ -1,0 +1,189 @@
+$darkgreen : #283618;
+$lightgreen :  #606c38;
+
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #fefae0;
+    main{
+        flex: auto;
+        padding: 40px 0;
+    }
+}
+.profile-section{
+    min-height: calc(100vh - 93px);
+    .hey{
+        font-weight: Bold;
+        Font-size: 25px;
+        Line-height: 20px;
+        color: $lightgreen;
+        margin-bottom: 30px;
+        display: inline-block;
+    }
+    h1{
+        font-size: 48px;
+        font-weight: bold;
+        line-height: 56px;
+        color: #bc6c25;
+        
+
+        span{
+            color: $lightgreen;
+
+            @media only screen and (max-width:767px){
+               display: block;
+            }
+        }
+
+        @media only screen and (max-width:767px){
+            font-size: 28px;
+            line-height: 40px;
+        }
+    }
+
+    @media only screen and (max-width:991px){
+        margin-top: 50px;
+    }
+}
+
+.work-projects{
+    .single-project{
+        background-color: #FAFBFF;
+        margin: 70px 0;
+        .project-content{
+            padding: 50px;
+
+            h3{
+                font-weight: 700;
+                font-size:32px ;
+                line-height:1.5 ;
+                letter-spacing:1px ;
+                color:#bc6c25;
+            }
+            p{
+                font-weight: 400;
+                font-size:16px ;
+                line-height:26px ;
+                letter-spacing:.5px ;
+                color:#65626D;
+                margin: 15px 0px;
+            }
+            a{
+                font-weight: Bold;
+                Font-size: 25px;
+                Line-height: 20px;
+                color: $lightgreen;
+                display: inline-block;
+                text-decoration: none;
+            }
+            @media only screen and (max-width:767px){
+               padding: 25px;
+            }
+        }
+        .img{
+            overflow: hidden;
+            overflow: hidden;
+            min-width: 370px;
+            min-height: 340px;
+
+            img{
+                @media only screen and (max-width:991px){
+                    width: 100%;
+                    object-fit: cover;
+                    height: 100%;
+                    max-height: 100%;
+                    max-width: 100%;
+                }
+            }
+            @media only screen and (max-width:991px){
+                width: 100%;
+                min-width: 100%;
+                min-height: 100%;
+                max-height: 300px;
+            } 
+
+
+        }
+        @media only screen and (max-width:991px){
+            flex-direction: column-reverse;
+        }
+    }
+    .single-project:nth-child(even){
+        flex-direction: row-reverse;
+
+        @media only screen and (max-width:991px){
+            flex-direction: column-reverse;
+        }
+    }
+
+}
+.work{
+    font-weight: 400;
+    font-size: 300px;
+    font-family: 'Jockey One', sans-serif;
+    letter-spacing: 1px;
+    color: #FBFAFF;
+
+    @media only screen and (max-width:767px){
+        font-size: 200px;
+    }
+    @media only screen and (max-width:575px){
+        font-size: 100px;
+    }
+}
+
+
+.social-section{
+    background-color: #dda15e;
+    padding:100px 0 ;
+    text-align: center;
+    p{
+        font-size: 32px;
+        line-height: 48px;
+        letter-spacing: 1px;
+        font-weight: 800;
+    }
+    .social-listing{
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style-type: none;
+        
+        li{
+            margin: 0px 15px;
+            a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                background-color: #bc6c25;
+                   
+                @media only screen and (max-width:575px){
+                    width: 40px;
+                    height: 40px;
+                }
+            }           
+            svg{
+
+                fill:#fff;
+                @media only screen and (max-width:575px){
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+
+            @media only screen and (max-width:575px){
+               margin: 0px 7.5px;
+            }
+        }
+    }
+}
